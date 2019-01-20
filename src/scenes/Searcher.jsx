@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import _ from 'lodash';
-import Text from "../components/TextComponent";
+import Text from "../components/Text";
 
 
 // Message is a styled div to display user action messages.
@@ -138,7 +138,7 @@ class Searcher extends React.Component {
 
     // This filters through the JSON data to display the correct items. I've set it up so that this calls
     //  as the user types, thus performing a live search! 
-    filterItems = value => {
+    filterItems(value) {
         // Since our JSON only contains < 200 objects, we can iterate through all of them relatively quickly
         const results = [];
         if (value !== "") {

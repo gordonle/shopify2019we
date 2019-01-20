@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../components/TextComponent";
+import Text from "../components/Text";
 
 const HomeHero = styled("div")`
     height: 100px;
